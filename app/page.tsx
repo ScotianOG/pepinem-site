@@ -386,11 +386,8 @@ export default function Home() {
                 transition={{ delay: 0.3 }}
               >
                 Rhymin&apos; and schemin&apos; from the neck up straight
-                memein&apos;
-                <br>
-                  Came out the swap dreamin&apos; now he&apos;s everywhere
-                  streamin&apos;
-                </br>
+                memein&apos; Came out the swap dreamin&apos; now he&apos;s
+                everywhere streamin&apos;
               </motion.p>
               <motion.div
                 className="bg-gradient-to-r from-orange-500 to-purple-600 text-white inline-block px-6 py-3 rounded-full font-bold"
