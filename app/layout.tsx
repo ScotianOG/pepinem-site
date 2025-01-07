@@ -13,9 +13,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "PEPinem - The Frog Rap Legend",
-  description:
-    "From the pond to platinum, PEPinem is revolutionizing the rap game.",
+  title: "PEPinem",
+  description: "Real Hop Hop",
 };
 
 export default function RootLayout({

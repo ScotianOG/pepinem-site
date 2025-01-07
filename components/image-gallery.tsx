@@ -44,7 +44,7 @@ export function ImageGallery() {
   return (
     <Card className="w-full bg-black/20 backdrop-blur-sm border-gray-800">
       <CardContent className="p-1">
-        <div className="relative aspect-[16/9] overflow-hidden rounded-lg">
+        <div className="relative aspect-[16/10] overflow-hidden rounded-lg bg-black">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
@@ -58,7 +58,8 @@ export function ImageGallery() {
                 src={images[currentIndex].url}
                 alt={images[currentIndex].caption}
                 layout="fill"
-                objectFit="cover"
+                objectFit="contain"
+                className="bg-black"
               />
             </motion.div>
           </AnimatePresence>
