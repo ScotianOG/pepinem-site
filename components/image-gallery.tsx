@@ -5,22 +5,23 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const images = [
   {
-    url: "/images/pepinem-1.jpg",
+    url: "/pepinem-1.jpg",
     caption: "Street Frog",
   },
   {
-    url: "/images/pepinem-2.jpg",
+    url: "/pepinem-2.jpg",
     caption: "My name is....",
   },
   {
-    url: "/images/pepinem-3.jpg",
+    url: "/pepinem-3.jpg",
     caption: "Making his mark",
   },
   {
-    url: "/images/pepinem-4.jpg",
+    url: "/pepinem-4.jpg",
     caption: "Pepinem Live",
   },
 ];
@@ -45,22 +46,27 @@ export function ImageGallery() {
       <CardContent className="p-1">
         <div className="relative aspect-[16/9] overflow-hidden rounded-lg">
           <AnimatePresence mode="wait">
-            <motion.img
+            <motion.div
               key={currentIndex}
-              src={images[currentIndex].url}
-              alt={images[currentIndex].caption}
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0"
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3 }}
-            />
+            >
+              <Image
+                src={images[currentIndex].url}
+                alt={images[currentIndex].caption}
+                layout="fill"
+                objectFit="cover"
+              />
+            </motion.div>
           </AnimatePresence>
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
 
           <div className="absolute bottom-0 left-0 right-0 p-4">
-            <p className="text-white text-xl font-helvetica text-center">
+            <p className="text-white text-xl font-roboto text-center">
               {images[currentIndex].caption}
             </p>
           </div>
