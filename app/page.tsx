@@ -315,7 +315,7 @@ export default function Home() {
               Contract
             </motion.a>
             <motion.a
-              href="#"
+              href="https://twitter.com/pepinem_hipHOP"
               className="text-white hover:text-orange-400 transition-colors flex items-center gap-1"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -377,7 +377,7 @@ export default function Home() {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-white via-orange-400 to-white bg-clip-text text-transparent font-helvetica leading-normal">
-                The Frog Rap Legend
+                Real Hip Hop
               </h2>
               <motion.p
                 className="text-xl mb-6"
@@ -385,8 +385,12 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
               >
-                From the neck down Slim Shady, from the neck up meme - PEPinem
-                is revolutionizing the game.
+                Rhymin&apos; and schemin&apos; from the neck up straight
+                memein&apos;
+                <br>
+                  Came out the swap dreamin&apos; now he&apos;s everywhere
+                  streamin&apos;
+                </br>
               </motion.p>
               <motion.div
                 className="bg-gradient-to-r from-orange-500 to-purple-600 text-white inline-block px-6 py-3 rounded-full font-bold"
@@ -403,7 +407,7 @@ export default function Home() {
                   repeat: Infinity,
                 }}
               >
-                Launching JAN 3 on PUMPFUN
+                Launching JAN 6 on PUMPFUN
               </motion.div>
             </motion.div>
           </div>
