@@ -284,7 +284,7 @@ export default function Home() {
             />
 
             <motion.h1
-              className="text-3xl font-bold text-white font-helvetica"
+              className="text-3xl font-bold text-white font-roboto"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -376,7 +376,7 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-white via-orange-400 to-white bg-clip-text text-transparent font-helvetica leading-normal">
+              <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-white via-orange-400 to-white bg-clip-text text-transparent font-roboto leading-normal">
                 Real Hip Hop
               </h2>
               <motion.p
@@ -546,7 +546,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold mb-6 text-center bg-gradient-to-r from-white via-orange-400 to-white bg-clip-text text-transparent font-helvetica">
+          <h2 className="text-4xl font-bold mb-6 text-center bg-gradient-to-r from-white via-orange-400 to-white bg-clip-text text-transparent font-roboto">
             Image Gallery
           </h2>
           <ImageGallery />
