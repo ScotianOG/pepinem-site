@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "micro-flf": ["var(--font-micro-flf)"],
+        helvetica: ["var(--font-helvetica-neue)"],
         sans: ["var(--font-inter)"],
       },
     },
