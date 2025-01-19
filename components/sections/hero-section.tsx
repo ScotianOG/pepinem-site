@@ -110,7 +110,7 @@ export function HeroSection({ isMusicPlaying }: HeroSectionProps) {
                   repeat: Infinity,
                 }}
               >
-                Launching JAN 7 on PUMPFUN
+                Launching JAN 19 on PUMPFUN
               </motion.div>
             </motion.div>
           </div>
