@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface HeroSectionProps {
   isMusicPlaying: boolean;
@@ -23,7 +23,7 @@ export function HeroSection({ isMusicPlaying }: HeroSectionProps) {
                 transition={{
                   duration: 10,
                   repeat: Infinity,
-                  ease: "linear"
+                  ease: "linear",
                 }}
               />
               <Image
@@ -44,26 +44,38 @@ export function HeroSection({ isMusicPlaying }: HeroSectionProps) {
               <div className="relative mb-6">
                 <motion.div
                   className="absolute -inset-2 rounded-lg bg-gradient-to-r from-[#4ade80] to-[#4ade80]/50 opacity-75 blur"
-                  animate={isMusicPlaying ? {
-                    opacity: [0.5, 1, 0.5],
-                    scale: [1, 1.05, 1],
-                  } : {}}
+                  animate={
+                    isMusicPlaying
+                      ? {
+                          opacity: [0.5, 1, 0.5],
+                          scale: [1, 1.05, 1],
+                        }
+                      : {}
+                  }
                   transition={{
                     duration: 2,
                     repeat: Infinity,
-                    ease: "linear"
+                    ease: "linear",
                   }}
                 />
                 <motion.div
                   className="relative"
-                  animate={isMusicPlaying ? {
-                    scale: [1, 1.02, 1],
-                    filter: ["brightness(1)", "brightness(1.2)", "brightness(1)"],
-                  } : {}}
+                  animate={
+                    isMusicPlaying
+                      ? {
+                          scale: [1, 1.02, 1],
+                          filter: [
+                            "brightness(1)",
+                            "brightness(1.2)",
+                            "brightness(1)",
+                          ],
+                        }
+                      : {}
+                  }
                   transition={{
                     duration: 1.5,
                     repeat: Infinity,
-                    ease: "linear"
+                    ease: "linear",
                   }}
                 >
                   <Image
@@ -75,7 +87,7 @@ export function HeroSection({ isMusicPlaying }: HeroSectionProps) {
                   />
                 </motion.div>
               </div>
-              <motion.p 
+              <motion.p
                 className="text-xl mb-6 font-bold"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -105,6 +117,5 @@ export function HeroSection({ isMusicPlaying }: HeroSectionProps) {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

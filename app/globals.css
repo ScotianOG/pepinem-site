@@ -21,6 +21,25 @@ body {
   }
 }
 
+/* Add radial gradient support */
+@layer utilities {
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+}
+
+/* Add glow effect */
+.glow {
+  filter: drop-shadow(0 0 10px currentColor);
+}
+
+/* Enhance transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .font-micro-flf {
   font-family: var(--font-micro-flf);
 }
@@ -40,7 +59,8 @@ body {
 .DialogContent {
   background-color: #1a1a1a;
   border-radius: 6px;
-  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -71,4 +91,3 @@ body {
     transform: translate(-50%, -50%) scale(1);
   }
 }
-
